@@ -9,21 +9,36 @@ def calculate():
     number_2 = int(input('Második szám: '))
 
 
-    if operation == '+' and (number_1 != '' or number_1 != "") :
+    if operation == '+' and (number_1 != '' or number_1 != "") and (number_2 !='' or number_2 != ""):
         print('{} + {} = '.format(number_1, number_2), (number_1 + number_2))
+    
+    else:
+        print("Számot adj meg!")
+        return number_1
 
-    elif operation == '-':
+
+    if operation == '-' and (number_1 != '' or number_1 != "") and (number_2 !='' or number_2 != ""):
         print('{} - {} = '.format(number_1, number_2), (number_1 - number_2))
 
-    elif operation == '*':
-        print('{} * {} = '.format(number_1, number_2), (number_1 * number_2))
+    else:
+        print("Számot adj meg!")
+        return number_1
 
-    elif operation == '/':
+
+    if operation == '*' and (number_1 != '' or number_1 != "") and (number_2 !='' or number_2 != ""):
+        print('{} * {} = '.format(number_1, number_2), (number_1 * number_2))
+    
+    else:
+        print("Számot adj meg!")
+        return number_1
+
+
+    if operation == '/' and (number_1 != '' or number_1 != "") and (number_2 !='' or number_2 != ""):
         print('{} / {} = '.format(number_1, number_2), (number_1 / number_2))
 
     else:
-        print("Rossz adatot/adatokat adtál meg!")
-        return calculate()
+        print("Számot adj meg!")
+        return number_1
 
 
 calculate()
