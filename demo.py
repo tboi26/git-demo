@@ -1,6 +1,8 @@
-# my simple hello world program 
+# my simple greeting program 
 
 name = input("Give me your name: ")
-print(f'Hello {name}!')
 
-# TODO: modify program to have a function
+def greeting(name: str):
+    print(f'Hello {name}!')
+
+greeting(name)
