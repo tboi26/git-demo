@@ -9,3 +9,6 @@ def greet(name: str):
     print(f'Hello {name}!')
 
 greet(name)
+
+# TODO: something
+# TODO: implement main function
